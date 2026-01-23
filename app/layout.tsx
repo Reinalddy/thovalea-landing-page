@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   },
   description:
     'Thovalea is a digital service company providing custom software development, business digitalization, and long-term technical solutions for small businesses and organizations.',
+  verification: {
+  google: 'dCIt0hUwPuZk3rb9tuQzIFxZJ7FL6BdtE8M_yVlaTtM', // 👈 ISI DARI GOOGLE
+  },
   keywords: [
     'Thovalea',
     'digital service company',
