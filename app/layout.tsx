@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Thovalea' }],
   creator: 'Thovalea',
-  metadataBase: new URL('https://thovalea.com'), // ganti sesuai domain
+  metadataBase: new URL('https://thovalea.vercel.app'), // ganti sesuai domain
   openGraph: {
     title: 'Thovalea | Digital Service Company',
     description:
