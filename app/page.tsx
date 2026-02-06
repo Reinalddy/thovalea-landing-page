@@ -3,24 +3,25 @@ import Hero from '@/app/components/sections/Hero'
 import About from '@/app/components/sections/About'
 import Services from '@/app/components/sections/Services'
 import WhyUs from '@/app/components/sections/WhyUs'
+import Portfolio from '@/app/components/sections/Portfolio'
+import Testimonials from '@/app/components/sections/Testimonials'
 import CTA from '@/app/components/sections/CTA'
+import Footer from '@/app/components/layout/Footer'
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <WhyUs />
-      <CTA />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Portfolio />
+        <WhyUs />
+        <Testimonials />
+        <CTA />
+      </main>
+      <Footer />
     </>
   )
 }
-
-export const metadata = {
-  title: 'Thovalea | Digital Services for Small & Growing Businesses',
-  description:
-    'Thovalea helps small businesses and organizations build reliable software, automate workflows, and grow through technology.',
-}
-
