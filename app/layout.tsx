@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     'Thovalea is a digital service company providing custom software development, business digitalization, and long-term technical solutions for small businesses and organizations.',
   verification: {
-  google: 'dCIt0hUwPuZk3rb9tuQzIFxZJ7FL6BdtE8M_yVlaTtM', // 👈 ISI DARI GOOGLE
+    google: 'dCIt0hUwPuZk3rb9tuQzIFxZJ7FL6BdtE8M_yVlaTtM', // 👈 ISI DARI GOOGLE
   },
   keywords: [
     'Thovalea',
@@ -24,12 +24,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Thovalea' }],
   creator: 'Thovalea',
-  metadataBase: new URL('https://thovalea.vercel.app'), // ganti sesuai domain
+  metadataBase: new URL('http://thovalea.com'), // ganti sesuai domain
   openGraph: {
     title: 'Thovalea | Digital Service Company',
     description:
       'Custom software development and digital solutions for growing businesses.',
-    url: 'https://thovalea.vercel.app', // ganti sesuai domain
+    url: 'http://thovalea.com', // ganti sesuai domain
     siteName: 'Thovalea',
     images: [
       {
@@ -45,6 +45,17 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  manifest: '/pavicon/manifest.json',
+  icons: {
+    icon: [
+      { url: '/pavicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/pavicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/pavicon/apple-icon-180x180.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/pavicon/favicon.ico',
   },
 }
 

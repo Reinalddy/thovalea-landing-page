@@ -2,6 +2,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter, Instagram, ArrowUpRight } from 'lucide-react'
 import { fadeUp, staggerContainer, staggerItem } from '@/app/lib/motion'
 
@@ -50,8 +51,13 @@ export default function Footer() {
                     {/* Brand Column */}
                     <motion.div variants={staggerItem} className="lg:col-span-2">
                         <div className="flex items-center gap-2 mb-6">
-                            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 shadow-lg shadow-indigo-500/25">
-                                <span className="text-xl font-bold text-white">T</span>
+                            <div className="relative h-10 w-10 overflow-hidden rounded-xl">
+                                <Image
+                                    src="/logo.png"
+                                    alt="Thovalea Logo"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                             <span className="text-xl font-bold tracking-tight gradient-text">
                                 Thovalea

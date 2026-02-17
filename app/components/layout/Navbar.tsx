@@ -2,6 +2,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
@@ -41,8 +42,8 @@ export default function Navbar() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
                 className={`fixed top-0 z-50 w-full transition-all duration-500 ${scrolled
-                        ? 'glass-strong shadow-lg shadow-black/10'
-                        : 'bg-transparent'
+                    ? 'glass-strong shadow-lg shadow-black/10'
+                    : 'bg-transparent'
                     }`}
             >
                 {/* Gradient border on scroll */}
@@ -62,8 +63,13 @@ export default function Navbar() {
                         whileTap={{ scale: 0.98 }}
                         className="relative z-10 flex items-center gap-2"
                     >
-                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 shadow-lg shadow-indigo-500/25">
-                            <span className="text-xl font-bold text-white">T</span>
+                        <div className="relative h-10 w-10 overflow-hidden rounded-xl">
+                            <Image
+                                src="/logo.png"
+                                alt="Thovalea Logo"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                         <span className="text-xl font-bold tracking-tight">
                             <span className="gradient-text">Thovalea</span>
